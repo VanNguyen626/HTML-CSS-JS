@@ -2,20 +2,31 @@
 <html>
     <head>
         <title>My Profolio</title>
+        <link rel="stylesheet" href="style/profolio.css">
     </head>
     <body>
-        <h1 id="top">Van Dinh Nguyen</h1>
-        <nav>
-            <ul>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#education">Education and Skills</a></li>
-                <li><a href="#experience">Experiences</a></li>
-                <li><a href="#contact">Contact Info</a></li>
-            </ul>
-        </nav>
+        <!--header section-->
+        <div class="header">
+            <h1 id="top">Van Dinh Nguyen</h1>
+            <nav>
+                <ul class="tag">
+                    <li><a href="#aboutme" class="tags">About Me</a></li>
+                    <li><a href="#education" class="tags">Education and Skills</a></li>
+                    <li><a href="#contact" class="tags">Contact Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--End header section-->
+
+        <!--About Me section-->
         <main id="aboutme">
-            <h3>About Me</h3>
-            <p>
+            <div class="picture">
+                <img src="profile-picture/profile_1.jpg">
+            </div>
+            <div class="profile">
+                <h2 class="intro">Introduction</h2>
+                <h3>About Me</h3>
+            <p class="para">
                 My name is Van Nguyen and I'm 24 years old.
                 I have 2 years of studied Computer-Science at Seattle Central College.
                 My passion is to become font-end Web-Development and Full-Stack Web-Development.
@@ -30,7 +41,7 @@
                 <li>Listening to music</li>
                 <li>Play soccer</li>
             </ul>
-            <details>
+            <details class="detail">
                 <summary>More About Me</summary>
                 <p>
                     I borns in VietNam until I'm 18 years old.
@@ -46,7 +57,11 @@
                     for me to pursuit my career and my goal in life to it. 
                 </p>
             </details>
+            </div>
         </main>
+        <!--End section-->
+
+        <!--Education section-->
         <section id="education">
             <h2>Education and Skills</h2>
             <ol>
@@ -60,14 +75,13 @@
                 <li>Mathematical Aptitude</li>
                 <li>Problem solving and analysis of algorithms</li>
             </ul>
-        </section>
-        <section id="experience">
             <h2>Experiences</h2>
-            <ol>
+            <ul>
                 <li>Amazon Sortation (2021-2022)</li>
                 <li>Warehouse Operation (Jan-2019 to Mar-2019)</li>
-            </ol>
+            </ul>
         </section>
+        <!--End section-->
         <footer id="contact">
             <p>Email:vannguyen62698@gmail.com</p>
             <p>phone: 425-830-2513</p>
@@ -83,10 +97,10 @@
             <a href="https://www.linkedin.com/in/van-nguyen-ba8324240/" target="_blank">
                 linkedin
             </a>
+            <br>
+            <div class="back-to-top">
+                <a href="#top">Back to top</a>
+            </div>
         </footer>
-        <br>
-        <div style="text-align: center;">
-            <a href="#top">Back to top</a>
-        </div>
     </body>
 </html>
