@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    width: 30px;
+}
+
+#header{
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+#main-section{
+    border: 1px solid red;
+}
+
+.tag{
+    width: 200px;
+    background-color: aqua;
+    border-radius: 100%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
