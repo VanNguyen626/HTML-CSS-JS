@@ -63,13 +63,22 @@ padding-bottom: 20px;
 
   .grid{
     display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   #features .icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 20vw;
-    color: darkorange;
+    height: 125px;
+    width: 20vw
+  }
+
+  #features .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
   }
