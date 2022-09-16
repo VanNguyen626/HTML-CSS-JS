@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: Arial;
+    font-size: 14px;
+}
+/*Header Section */
+.header{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tag{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.tags{
+    color: white;
+    text-decoration: aliceblue;
+}
+/* End header section */
+
+/*About Me section */
+main{
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: rgb(70, 70, 70);
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.intro{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.para, .detail{
+    text-align: left;
+    font-size: 16px;
+}
+
+img{
+    width: 400px;
+}
+
+/* End section */
+
+/*Education, skill and experience section*/
+#education{
+    background-color: rgb(117, 117, 117);
+    color: white;
+    padding: 10px;
+}
+/*End section*/
+
+/*Contact section*/
+#contact{
+    background-color: rgb(199, 199, 199);
+    padding: 10px;
+    color: white;
+}
+/*End section*/
+
+.back-to-top{
+    text-align: center;
+    padding: 10px;
+}

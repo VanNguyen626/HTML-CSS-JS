@@ -1,84 +1,174 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    color: white;
 }
-p{
-    font-family: Arial;
-    font-size: 14px;
-}
-/*Header Section */
-.header{
+/*Navigation section*/
+#hero{
+    position: relative;
     width: 100%;
-    background-color: rgb(41, 41, 41);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-h1{
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 100vh;
 }
 
-.tag{
-    list-style-type: none;
+nav{
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 10px;
-}
-
-.tags{
-    color: white;
-    text-decoration: aliceblue;
-}
-/* End header section */
-
-/*About Me section */
-main{
-    padding-left: 10px;
-    padding-right: 10px;
-
-    background-color: rgb(70, 70, 70);
-    color: white;
-    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
     justify-content: space-between;
+    background: crimson;
+}
+
+nav h2{
+    cursor: pointer;
+    font-style: italic;
+    padding-left: 20px;
+    color: white;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover{
+    color: brown;
+}
+
+/*End section*/
+
+/*Welcome section*/
+#detail{
+    background: antiquewhite;
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 20px;
+    color: crimson;
+}
+
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+/*End section*/
+
+/*About section*/
+#about, .para{
+    background: #303841;
+    color: white;
+    padding: 30px 10px;
+}
+
+.listting{
+    padding-left: 50px;
 }
 
 .intro{
     font-size: 30px;
     text-align: center;
-
+    padding: 15px 20px;
+    text-decoration: underline;
 }
 
-.para, .detail{
-    text-align: left;
-    font-size: 16px;
+.heading{
+    padding: 15px 20px;
+    font-style: italic;
+    text-decoration: underline;
 }
 
-img{
-    width: 400px;
+/*End section*/ 
+
+/*Projects section*/
+#project-section{
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #45567d;
 }
 
-/* End section */
+.project-header{
+    max-width: 540px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+}
 
-/*Education, skill and experience section*/
-#education{
-    background-color: rgb(117, 117, 117);
-    color: white;
-    padding: 10px;
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: lightblue;
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
 }
 /*End section*/
 
 /*Contact section*/
-#contact{
-    background-color: rgb(199, 199, 199);
-    padding: 10px;
-    color: white;
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: #303841;
+}
+
+.contact-section-header > h2 {
+    font-size: 6rem;
+  }
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
 }
 /*End section*/
-
-.back-to-top{
-    text-align: center;
-    padding: 10px;
-}
