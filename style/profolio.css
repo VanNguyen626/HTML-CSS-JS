@@ -42,7 +42,6 @@ main{
     background-color: rgb(70, 70, 70);
     color: white;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
