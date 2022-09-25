@@ -41,7 +41,8 @@ h1, h2, p{
 
 .section{
     background-color: rgb(245, 245, 245);
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .text{
