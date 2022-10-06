@@ -85,9 +85,9 @@ p{
 
 /*About section*/
 #about, .para{
+    width: 100%;
     background: #303841;
     color: white;
-    padding: 30px 10px;
 }
 
 .listting{
@@ -111,30 +111,24 @@ p{
 
 /*Projects section*/
 #project-section{
-    text-align: center;
-    padding: 5rem 2rem;
-    background: #45567d;
-}
-
-.project-header{
-    max-width: 540px;
-    margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid white;
-}
-
-.project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    background-color: lightblue;
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    text-align: center;
 }
+
+.picture img{
+    border: 1px solid black;
+    height: auto;
+    width: 10%;
+    float: left;
+    width:  300px;
+    height: 300px;
+    background-size: cover;
+  }
 /*End section*/
 
-/*Contact section*/
+/*Contact section
 .contact-section{
     display: flex;
     flex-direction: column;
@@ -171,4 +165,4 @@ p{
     padding: 1rem 2rem;
     border-radius: 2px;
 }
-/*End section*/
+/*End section
